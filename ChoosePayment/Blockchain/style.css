@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Monda';
+  font-style: normal;
+  font-weight: 400;
+
+ src: url(https://fonts.gstatic.com/s/monda/v11/TK3tWkYFABsmjsphPh8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Monda';
+  font-style: normal;
+  font-weight: 700;
+ src: url(https://fonts.gstatic.com/s/monda/v11/TK3gWkYFABsmjsLaGw8Ene8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+ /*src: url(https://fonts.gstatic.com/s/poiretone/v9/UqyVK80NJXN4zfRgbdfbo55cUg.ttf) format('truetype');*/
+}
+body {
+ /* background: url('https://www.toptal.com/designers/subtlepatterns/patterns/doodles.png');*/
+  background-size: 600px;
+}
+.wrapping {
+ /* background: url(https://www.toptal.com/designers/subtlepatterns/patterns/darkness.png);*/
+  border-radius: 6px;
+  overflow: hidden;
+}
+.clear {
+  clear: both;
+}
+.coinpay {
+  background: rgba(51, 51, 51, 0.7);
+  color: white;
+  font-family: 'Monda', sans-serif;
+  font-size: 12px;
+}
+#qrCode {
+  width: 200px;
+}
+#qrCode img {
+  width: 100%;
+}
+.payment,
+.yourQR {
+  display: none;
+  padding: 15px;
+}
+.yourQR {
+  background: white;
+  color: black;
+}
+.goodnow {
+  display: block;
+}
+.goodnot {
+  display: none;
+}
+.coinpay .logo {
+  background: rgba(51, 51, 51, 0.2);
+  padding: 15px;
+  font-family: 'Poiret One', cursive;
+}
+.coinpay .logo p {
+  display: inline-block;
+}
+.coinpay .details {
+  float: left;
+  width: 60%;
+}
+.coinpay .details p {
+  padding: 15px;
+}
+.coinpay .start {
+  float: left;
+  width: 40%;
+}
+.coinpay .start button {
+  margin-top: 30px;
+  background: white;
+  border: solid 3px white;
+  border-radius: 6px;
+  color: black;
+  font-family: 'Poiret One', cursive;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.coinpay .payment {
+  width: 100%;
+  float: left;
+}
+.coinpay .payment form {
+  padding: 15px;
+}
+.coinpay .payment form input {
+  background: rgba(51, 51, 51, 0);
+  border: 0px;
+  color: white;
+}
+.go {
+  cursor: pointer;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ART - Payments</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class="wrapping">
+  <div class="coinpay">
+    <div class="logo">
+      <p>Trust-wallet</p>
+      <p><bold>Q</bold>R CODE</p>
+    </div>
+    <div class="details">
+      <p>Use block-chain technology for fast payments !</p>
+    </div>
+    <div class="start">
+      <button onclick="start();">generate QR Code</button>
+    </div>
+    <div class="payment">
+      <form onsubmit="getQR();return false;" action="">
+      <p>Enter the bitcoin address to recieve payment</p>
+      <input value="0xc21f24bbc3d0b719b8e412130cbafd2c323855db" id="wallet">
+      <p>Enter the amount for the transaction</p>
+      <input required type="number" value="0.0001" placeholder="4.20" step="0.0001" id="amount">
+      <p>Name of recipient of payment label</p>
+      <input required type="text" id="label" placeholder="name or label">
+      <p>Payment message or note.</p>
+      <input required type="text" id="message" placeholder="message, payment note">
+      <input class="go" type="submit" value="create QRCode">
+      </form>
+    </div>
+    <div class="yourQR">
+      <div id="qrCode" class="qr"></div>
+      <a href="" class="downloadQR" download>download</a>
+      <div class="info">
+        <table>
+          <p>Use the image above directly from this page or save the qrCode image so you can get paid or pay someone at a later date with it in sync with your btc wallet.</p>
+            <tr>
+            <td>recieve BTC address</td>
+            <td id="wwalet"></td>
+          </tr>
+          <tr>
+            <td>transaction amount</td>
+            <td id="aamount"></td>
+          </tr>
+          <tr>
+            <td>label</td>
+            <td id="llabel"></td>
+          </tr>
+            <tr>
+            <td>message</td>
+            <td id="mmessage"></td>
+          </tr>
+        </table>
+       <a href="thanks.html"> <input type="submit" value="Continue to checkout" class="btn"></a>
+    </div>
+  </div>
+        <div class="clear"></div>
+</div>
+
+  <script src='https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
